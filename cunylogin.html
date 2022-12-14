@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>CUNY Login</title>
+        <link rel="shortcut icon" href="https://ssologin.cuny.edu/images/favicon.ico" type="image/x-icon"> 
+		<link href="https://ssologin.cuny.edu/images/iosicon.png" rel="apple-touch-icon">
+    	<link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="admin.html">
+        <link rel="stylesheet" href="adminLogin.html">
+       	</head>
+	<body>
+
+    <header>
+                <div class="header1"><noscript><div id="noscript">Some features on this page require JavaScript (If you see this message it's because the browser has JavaScript turned off or does not support it).</div></noscript></div>
+                 <div class="header2">
+                 
+                 	<div class="cuny-logo"><a href="https://www.cuny.edu/"><img src="/imgs/cuny-logo.jpg" class="img-main" alt="City University of New York"></a></div>
+                                    
+                    
+                    </div>
+
+    </header>
+    
+    
+      <div class="container">
+      
+      
+     <!-- Please change the text below as needed and delete once you are done testing -->
+     <!-- <h2 class="test">***Test Environment***</h2> -->
+      <!--end of environment text-->
+          
+     
+		<div class="column one">
+               
+               
+               
+
+               <div class="row one">   
+               
+               <div class="desktop-message"><img src="imgs/new-cuny-login.jpg" class="img-main2" alt="CUNY Login Page for CUNY First CUNY Smart Virtual Bookstore Blackboard Degree Works and FACTS"></div> 
+               
+               <div class="mobile-message">
+               <h1>CUNY Login</h1>
+               </div>
+                           <h3>Log in with your <a href="https://www.cuny.edu/about/administration/offices/cis/cuny-login-faq/">CUNY Login credentials</a></h3> 
+				   <h4> If you do not have a CUNYfirst account, see the <a href="http://www2.cuny.edu/about/administration/offices/cis/cuny-login-faq#cuny_login_guest" target="_blank">FAQs</a>.</h4>
+
+   
+                                            </div>
+        
+        		<div class="row two">
+                
+                    
+                            <form name="loginp" class="form-signin" id="cunylogin"> 
+                                <div class="hidden">Note that @login.cuny.edu has already been entered in the Username field for you. Simply type your CUNYfirst username.</div>
+                                
+                                    <label for="usernameH">Username</label>
+                                   <input type="text" name="usernameH" id="usernameH" class="form-control" value="@login.cuny.edu" autocomplete="on" autofocus="" required>
+
+                                    <input type="hidden" name="username" id="username" class="form-control" autocomplete="off">
+                                    
+                                    <label for="usernameH" id="vLogin" class="error-message">Please make sure to enter a valid username (CUNYfirst Username) followed by @login.cuny.edu.</label>
+                                    
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" autocomplete="off" required>
+                                    <label for="password" id="vPassword" class="error-message">Please make sure to enter a Password.</label>
+
+                                    <button name="submit" class="btn btn-lg btn-primary btn-block" onclick="storeLogin();">Log in</button>
+                                 
+                                        
+                                  </form>
+                                                                    
+                                   <div class="support-links">
+                                           <a target="_blank:" href="https://managelogin.cuny.edu/OIMSelfService/registration">New User</a> 
+<span class="seperator">|</span>
+<a target="_blank:" href="https://managelogin.cuny.edu/OIMSelfService/forgotuid">Forgot Username</a>
+<span class="seperator">|</span>
+<a target="_blank:" href="https://managelogin.cuny.edu/OIMSelfService/forgotpwd">Forgot Password</a>
+<span class="seperator">|</span>
+<a target="_blank:" href="https://managelogin.cuny.edu/OIMSelfService/manageAuthentication">Manage your Account</a>
+                                 </div>
+                              
+                  </div>      
+                  
+                  
+                  <div class="row one">
+					  
+                  	<br>
+						   
+                        <p class="p"><strong>PROTECT YOUR PERSONAL INFORMATION AND PRIVACY</strong><br>
+ONLY enter your CUNY Login password on CUNY Login websites (ssologin.cuny.edu and login.cuny.edu). NEVER share it with others or enter your CUNY Login password elsewhere without the approval of your campus IT department.
+More information on CUNY’s policies regarding user accounts and credentials can be found in the <a href="https://www.cuny.edu/wp-content/uploads/sites/4/page-assets/about/administration/offices/legal-affairs/policies-procedures/Computer-Use-1.pdf">Acceptable Use of Computer Resources Policy</a>.</p>
+					  
+					  	<p class="p"><strong>Note:</strong> Please do not bookmark this page.</p>
+                        
+					 
+                        </div>
+                  
+                  
+    				</div>
+    
+   			
+            
+            </div>
+   
+   			
+                  
+                  
+   <div class="footer-main">
+   
+                 <div class="footer1">
+                                
+                </div>
+                
+                <div class="footer2">
+                
+                                    <div class="footer-nav"> 
+                                        <a href="http://www.cuny.edu/website/terms.html" target="_blank">Terms of Use</a>&nbsp;&nbsp;
+                                        <a href="http://www.cuny.edu/website/security.html" target="_blank">Security Policy</a>&nbsp;&nbsp;
+                                        <a href="http://cuny.edu/accessibility" target="_blank">IT Accessibility</a>&nbsp;&nbsp;
+                                        <a href="http://www.cuny.edu/about/resources/helpdesks.html" target="_blank">Tech Resources &amp; Help Desks</a>
+                                    </div>
+            
+                    </div>
+ 
+ 	</div>
+ 
+
+<script src="script.js"></script>
+<!--
+<script type="text/javascript">
+
+if(document.cookie.indexOf('RUEItrack=')==-1) {
+		 document.cookie='RUEItrack='+parseInt(Math.random()*2147418112)+new Date().getTime()+';path=/;domain='+document.location.host.substring(document.location.host.lastIndexOf('.',document.location.host.lastIndexOf('.') - 1));
+}
+</script>
+-->
+
+
+
+</body></html>

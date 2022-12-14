@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administrator</title>
+<style>
+
+* {
+    font-family: monospace;
+}
+body {
+  background-color: #000000;
+}
+
+.login-form {
+  width: 300px;
+  margin: auto;
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.login-form h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+</style>
+<link rel="stylesheet" href="admin.html">
+</head>
+<body>
+
+<!-- HTML Form for entering username and password -->
+<form class="login-form" id="loginForm">
+  <h1>Administrator</h1>
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!-- JavaScript for implementing login authentication -->
+<script>
+  // Listen for the form to be submitted
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+    // Prevent the form from being submitted
+    e.preventDefault();
+
+    // Get the entered username and password
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Check if the username and password are correct
+    if (username === 'admin' && password === 'password') {
+      // If the username and password are correct, redirect the user to the homepage
+      window.location.href = 'admin.html';
+    } else {
+      // If the username and password are incorrect, display an error message
+      alert('Incorrect username or password');
+    }
+  });
+</script>
+
+</body>
+</html>
